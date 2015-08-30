@@ -476,7 +476,11 @@ $(document).ready(function() {
 	<div class="main about span_of_3">
 		
 		<p class="para">
-		An OTP has been for your service request to your registered mobile number: <?php echo $_SESSION['mobile']?>. Please enter it below to confirm your request.
+		An OTP for your service request verification has been sent to your registered mobile number: 
+		<?php
+			$displaynum = substr($_SESSION['mobile'], 6,2)."****".substr($_SESSION['mobile'], 6);
+			echo $displaynum;
+		?>. Please enter it below to confirm your request.
 		<form method="post" action="../AdminAccessOnly/GoldUserRegistration.php">
 		<table>
 			<tr>

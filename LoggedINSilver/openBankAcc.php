@@ -649,8 +649,7 @@ $(document).ready(function() {
 				<a href="index.php"><img src="images/logo.png" alt=""/></a>
 			</div>		
 			<p class="f_para">We are a direct Bank</p>
-			<p>Phone:&nbsp;<span>(00) 222 666 444</span></p>
-			<span class="">Email:&nbsp;<a href="mailto:info@mycompany.com">info&#64;bankofsaudiarabia.com</a></span>
+			<p>Phone:&nbsp;(00) 222 666 444</p>
 		</div>
 		<div class="col-md-2 footer1_of_3">
 			<h4>About Us</h4>
