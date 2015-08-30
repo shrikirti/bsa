@@ -1,0 +1,110 @@
+/*search*/
+.search{
+	float:right;
+	position: relative;
+	background: #f3f4f5;
+	border: 1px solid #D8D8D8;
+	margin-right: 3%;
+	width: 24.33333%;
+}
+.search form{
+	width:100%;
+}
+.search input[type="text"]{
+	margin:0px 0;
+	font-family: 'Open Sans', sans-serif;
+	padding:8px 16px;
+	outline: none;
+	color: #5a5a5a;
+	background: none;
+	border: none;
+	width:85.33333%;
+	line-height: 1.5em;
+	position: relative;
+	font-size: 0.8725em;
+	-webkit-appearance: none;
+	text-transform: capitalize;
+}
+.search input[type="text"]:hover{
+	background: #ffffff;
+}
+.search input[type="submit"]{
+	background: url('../images/search.png') no-repeat 0px 1px;
+	border: none;
+	cursor: pointer;
+	width: 24px;
+	outline: none;
+	position: absolute;
+	height: 24px;
+	top: 6px;
+	right: 5px;
+}
+
+.form {
+  top: 50%;
+  left: 50%;
+  background: #F5F5F5;
+  width: 285px;
+  padding: 40px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+.form h2 {
+  margin: 0 0 20px;
+  line-height: 1;
+
+  color: #47817E;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.form h3 {
+  line-height: 1;
+  color: #47817E;
+  font-size: 14px;
+  padding-left: 10px;
+  font-weight: 400;
+}
+.form input[type="text"], input[type="password"],  input[type="textarea"]{
+  outline: none;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  color: #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-wieght: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -ms-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.form input:focus {
+  color: #333;
+  border: 1px solid #47817E;
+}
+.form button {
+  cursor: pointer;
+  background: #47817E;
+  width: 100%;
+  padding: 10px 15px;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -ms-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.form button:hover {
+  background: #62A29E;
+}
