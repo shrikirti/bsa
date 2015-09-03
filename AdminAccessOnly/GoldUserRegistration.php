@@ -24,7 +24,7 @@ if (!$conn) {
 	$sql = "UPDATE ".$table_prefix."User SET usertype = '".$usertype."' WHERE iqamaId = '".$iqamaId."'";		
 	if (mysqli_query($conn,$sql)) {		
 		echo "Value updated successfully, id=".$_SESSION['logged_in']."";	
-		//echo "<script>window.open('../plogin.html','_self')</script>";
+		echo "<script>window.open('../LoggedINSilver/requestReceived.php','_self')</script>";
 	}else{
 		die("Error adding value into table: ".mysqli_error($conn));
 		//echo "<script>window.open('../index.html','_self')</script>";

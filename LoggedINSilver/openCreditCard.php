@@ -40,6 +40,10 @@ session_start();
 <script src="js/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
 <script src="js/allinone_carousel.js" type="text/javascript"></script>
 <!--[if IE]><script src="js/excanvas.compiled.js" type="text/javascript"></script><![endif]-->
+<!-- start menu -->
+<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/megamenu.js"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
 <!-- must have -->
 	<script>
 		jQuery(function() {
@@ -302,33 +306,34 @@ $(document).ready(function() {
 			<a href="index.php"><img src="images/logo.png" alt=""/></a>
 		</div>
 		<div class="h_menu">
-		<a id="touch-menu" class="mobile-menu" href="#">Help and Support</a>
-		<nav>
-		<ul class="menu list-unstyled">
-			<li><a href="#">Language: <select class = "search">
-					<option>EN</option>
-					<option>Arabic</option>
-				</select>
-				</a></li>
-			<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-			<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-			<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-			<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-			<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-			<li><a href="underConstruction.php">24X7 Help</a></li>
-			<li><a href="underConstruction.php">Find ATMs</a></li>
-			<li><a href="underConstruction.php">Sitemap</a></li>
-			<li><a href="#">
-				<form >
+			<a id="touch-menu" class="mobile-menu" href="#">Help and Support</a>
+			<nav>
+			<ul class="menu list-unstyled">
+				<li><a href="#">Language: 
+						<select class = "search">
+							<option>EN</option>
+							<option>Arabic</option>
+						</select>
+					</a>
+				</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a href="underConstruction.php">24X7 Help</a></li>
+				<li><a href="underConstruction.php">Find ATMs</a></li>
+				<li><a href="underConstruction.php">Sitemap</a></li>
+				<li><a href="#">
+					<form >
 						<input type="text" value="" placeholder="search...">
 						<span><i class="fa fa-search"></i></span>
-				</form>
-				</a>
-			</li>
-
-		</ul>
-		</nav>
-		<script src="js/menu.js" type="text/javascript"></script>
+					</form>
+					</a>
+				</li>
+			</ul>
+			</nav>
+			<script src="js/menu.js" type="text/javascript"></script>
 		</div>
 
 		<div class="clearfix"></div>
@@ -377,7 +382,7 @@ $(document).ready(function() {
 								<h4>Treasury</h4>
 								<ul>
 									<li><a href="underConstruction.php">Term Deposit</a></li></br>
-									<li><a href="wounderConstructionmen.php">Recurring Deposit</a></li></br>
+									<li><a href="underConstruction.php">Recurring Deposit</a></li></br>
 								</ul>	
 							</div>							
 						</div>
@@ -533,45 +538,20 @@ $(document).ready(function() {
 				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li><a class="color7" href="service.php">Sign up</a></li>
-				<li><a class="color7" href = "#">					
-							<img class ="lock" src="images/icon-lock.png" height = "20" width ="20" alt=""/>
-						&nbsp;Login
-					</a>
-					<div class="megapanel">
-						<div class="row">
-
-							<div class="col3">
-								<div class="h_nav">
-									<h4>Login</h4>
-								</div>
-								<form  name = "loginForm" class="contact" onSubmit =" return login(this.loginType.value);">
-									</br>
-									<input name = "loginType" id="type" type="radio" value = "plogin"/>
-									<label for="personal">Personal</label></br>
-									<input name = "loginType" id="type" type="radio" value = "clogin"/>									
-									<label for="corporate">Corporate</label></br>
-									<input type="submit" value="Login"/>
-								</form>
-							</div>
-							<div class="col2">
-								<div class="h_nav">
-									<h4>New User?</h4>
-									<ul>
-										</br>Join us today for access to our financial tools, on-line chat, communities, forum and many more exciting facilities!
-										</br>
-										<form class="contact" action = "service.php" onSubmit = " return true">
-											<input type="submit" value="Register"/>
-										</form>
-									</ul>
-								</div>
-							</div>
-						</div>
+				<li><a class="color7" href = "#">Welcome 
+					<?php echo $_SESSION['login_user']
+						?>!</a>
+					<div class="dropdown">						
+						<ul> 
+							<li><a href="underConstruction.php">Inbox</a></li>
+							<li><a href="sprofile.php">Profile</a></li>
+							<li><a href="ServiceRequest.php">Service Request</a></li>
+							<li><a href="../logout.php">Logout</a></li>
+						</ul>
 					</div>
 			</li>
 		 </ul>
-</div>
+	</div>
 </div>
 <div class="main">
 		<h2>Request for a service</h2>
@@ -579,8 +559,8 @@ $(document).ready(function() {
 							<font size="4">Choose Service</font> &nbsp;&nbsp;
 							<font size="3">
 							<select name="service" onchange="window.location=this.options[this.selectedIndex].value">
-								<option value="#">Select..</option>
 								<option value="openAccount.php">Become Gold Member</option>
+								<option value="#">Select..</option>
 								<option value="update.php">Update Profile</option>
 								<option value="addition.php">Add more info in Profile</option>
 								<option value="Enquiry.php">Enquiry</option>
@@ -594,10 +574,11 @@ $(document).ready(function() {
 							<font size="4">Choose Service</font> &nbsp;&nbsp;
 							<font size="3">
 							<select name="ChangeProfile" onchange="window.location=this.options[this.selectedIndex].value">
+								<option value="openCreditCard.php">Apply for Credit Card</option>
 								<option value="#">Select..</option>
 								<option value="openBankAcc.php">Open Account</option>
 								<option value="openDeposit.php">Open Deposit Account </option>
-								<option value="openCreditCard.php">Apply for Credit Card</option>
+								
 							</select>
 							</font>
 						</form>

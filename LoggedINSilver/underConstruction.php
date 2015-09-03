@@ -29,6 +29,10 @@ session_start();
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
+<!-- start menu -->
+<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/megamenu.js"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
 <!-- Owl Carousel Assets -->
 <link href="css/owl.carousel.css" rel="stylesheet">
 <script src="js/owl.carousel.js"></script>
@@ -172,110 +176,252 @@ $(document).ready(function() {
 			<a href="index.php"><img src="images/logo.png" alt=""/></a>
 		</div>
 		<div class="h_menu">
-			<div class="header_head">
-				<a id="touch-menu" class="mobile-menu" href="#">Menu</a>
-				<nav>
-					<ul class="menu list-unstyled">
-						<li><a href="underConstruction.php">24X7 Help</a></li>
-						<li><a href="underConstruction.php">Sitemap</a></li>
-						<li><a href="underConstruction.php">Search box</a></li>
-					</ul>
-				</nav>
-				<script src="js/menu.js" type="text/javascript"></script>
-
-				<div class="clearfix"></div>
-			</div>
-		<a id="touch-menu" class="mobile-menu" href="#">Menu</a>
-		<nav>
-		<ul class="menu list-unstyled">
-			<li><a href="index.php">HOME</a></li>
-			<li><a href="#">Banking</a>
-			<ul class="sub-menu list-unstyled">
-				<li><a href="#">Personal</a>
-				<ul class="list-unstyled">
-						<li><a href="underConstruction.php">Savings Account</a></li>
-						<li><a href="underConstruction.php">Current Account</a></li>
-						<li><a href="underConstruction.php">Islamic Return Account</a></li>
-					</ul>
+			<a id="touch-menu" class="mobile-menu" href="#">Help and Support</a>
+			<nav>
+			<ul class="menu list-unstyled">
+				<li><a href="#">Language: 
+						<select class = "search">
+							<option>EN</option>
+							<option>Arabic</option>
+						</select>
+					</a>
 				</li>
-				<li><a href="#">Corporate</a>
-					<ul class="list-unstyled">
-						<li><a href="underConstruction.php">Current Account</a></li>
-						<li><a href="underConstruction.php">Currency Account</a></li>
-						<li><a href="underConstruction.php">Islamic Finance</a></li>
-						<li><a href="underConstruction.php">Investment Banking</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Business</a>
-					<ul class="list-unstyled">
-						<li><a href="underConstruction.php">Current Account</a></li>
-						<li><a href="underConstruction.php">Currency Account</a></li>
-						<li><a href="underConstruction.php">Islamic Finance</a></li>
-						<li><a href="underConstruction.php">Investment Banking</a></li>
-					</ul>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a href="underConstruction.php">24X7 Help</a></li>
+				<li><a href="underConstruction.php">Find ATMs</a></li>
+				<li><a href="underConstruction.php">Sitemap</a></li>
+				<li><a href="#">
+					<form >
+						<input type="text" value="" placeholder="search...">
+						<span><i class="fa fa-search"></i></span>
+					</form>
+					</a>
 				</li>
 			</ul>
-			</li>
-			<li><a href="#">Cards</a>
-				<ul class="sub-menu list-unstyled">
-					<li><a href="#">Debit Cards</a>
-						<ul class="list-unstyled">
-							<li><a href="underConstruction.php">Titanium Debit Card</a></li>
-							<li><a href="underConstruction.php">Johara Card</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Credit Cards</a>
-						<ul class="list-unstyled">
-							<li><a href="underConstruction.php">Visa Signature Card</a></li>
-							<li><a href="underConstruction.php">Visa Platinum Card</a></li>
-							<li><a href="underConstruction.php">Mastercard Platinum</a></li>
-							<li><a href="underConstruction.php">Mastercard Gold</a></li>
-						</ul>
-					</li>					
-				</ul>
-			</li>
-			<li><a href="#">Services</a>
-			<ul class="sub-menu list-unstyled">
-				<li><a href="#">Treasury</a>
-					<ul class="list-unstyled">
-						<li><a href="underConstruction.php">Term Deposit</a></li>
-						<li><a href="underConstruction.php">Recurring Deposit</a></li>
-					</ul>
-				</li>
-				<li><a href="Loan.php">Loans</a></li>
-				<li><a href="#">Foreign Exchange</a>
-					<ul class="list-unstyled">
-						<li><a href="underConstruction.php">Spot</a></li>
-						<li><a href="underConstruction.php">Swap</a></li>
-						<li><a href="underConstruction.php">Forward</a></li>
-					</ul>
-				</li>
-				<li><a href="service.php">Financial Tools</a></li>
-			</ul>
-			</li>
-			<li><a href="underConstruction.php">CONTACT</a></li>
-			<li> </a>&nbsp;&nbsp;&nbsp;&nbsp</li>
-			<li></a>&nbsp;&nbsp;&nbsp;&nbsp</li>
-			<li></a>&nbsp;&nbsp;&nbsp;&nbsp</li>
-			<li></a>&nbsp;&nbsp;&nbsp;&nbsp</li>
-			<li></a>&nbsp;&nbsp;&nbsp;&nbsp</li>
-			<li></a>&nbsp;&nbsp;&nbsp;&nbsp</li>
-			<li><a href="#"> Welcome XYZ! </a>
-				<ul class="list-unstyled">
-					<li><a href="#">Inbox</a></li>
-					<li><a href="#">Profile</a></li>
-					<li><a href="#">Service Request</a></li>
-					<li><a href="..\LoggedOut.html">Logout</a></li>
-					
-				</ul>
-			</li>
-		</ul>
-		</nav>
-		<script src="js/menu.js" type="text/javascript"></script>
+			</nav>
+			<script src="js/menu.js" type="text/javascript"></script>
 		</div>
+
 		<div class="clearfix"></div>
 	</div>
-</div>
+
+			<!-- start header menu -->
+		<ul class="megamenu skyblue">
+			<li><a class="color7" href="index.php">Home</a></li>
+			<li class="grid"><a class="color7" href="#">Banking</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Personal Banking</h4>
+								<ul>
+									<li><a href="underConstruction.php">Savings Account</a></li></br>
+									<li><a href="underConstruction.php">Current Account</a></li></br>
+									<li><a href="underConstruction.php">Islamic Returns Account</a></li></br>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Corporate Banking</h4>
+								<ul>
+									<li><a href="underConstruction.php">Current Account</a></li></br>
+									<li><a href="underConstruction.php">Currency Account</a></li></br>
+									<li><a href="underConstruction.php">Islamic Finance</a></li></br>
+									<li><a href="underConstruction.php">Investment Banking</a></li></br>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Business Banking</h4>
+								<ul>
+									<li><a href="underConstruction.php">Current Account</a></li></br>
+									<li><a href="underConstruction.php">Currency Account</a></li></br>
+									<li><a href="underConstruction.php">Islamic Finance</a></li></br>
+									<li><a href="underConstruction.php">Investment Banking</a></li></br>
+								</ul>	
+							</div>												
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Treasury</h4>
+								<ul>
+									<li><a href="underConstruction.php">Term Deposit</a></li></br>
+									<li><a href="underConstruction.php">Recurring Deposit</a></li></br>
+								</ul>	
+							</div>							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+    				</div>
+				</li>
+			<li class="active grid"><a class="color7" href="#">Cards</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Debit cards</h4>
+								<ul>
+									<li><a href="underConstruction.php">Titanium Visa Card</a></li></br>
+									<li><a href="underConstruction.php">Coral MasterCard</a></li></br>
+									<li><a href="underConstruction.php">Johara Card</a></li></br>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Credit cards</h4>
+								<ul>
+									<li><a href="underConstruction.php">Visa Titanium Card</a></li></br>
+									<li><a href="underConstruction.php">Visa Signature Card</a></li></br>
+									<li><a href="underConstruction.php">Visa Platinum Chip Card</a></li></br>
+									<li><a href="underConstruction.php">MasterCard Gold</a></li></br>
+									<li><a href="underConstruction.php">MasterCard platinum Chip</a></li></br>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Travel Cards</h4>
+								<ul>
+									<li><a href="underConstruction.php">Visa Travel Card</a></li></br>
+								</ul>	
+							</div>							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+    				</div>
+				</li>				
+				<li><a class="color7" href="#">Services</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Loans</h4>
+								<ul>
+									<li><a href="Loan.php">Car Loan</a></li></br>
+									<li><a href="Loan.php">Home Loan</a></li></br>
+									<li><a href="Loan.php">Personal Loan</a></li></br>
+									<li><a href="Loan.php">Education Loan</a></li></br>
+									<li><a href="Loan.php">Working Capital Loan</a></li></br>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Financial Tools</h4>
+								<ul>
+									<li><a href="service.php">Loan Calculator</a></li></br>
+									<li><a href="service.php">Mortgage Calculator</a></li></br>
+									<li><a href="service.php">Savings Calculator</a></li></br>
+									<li><a href="service.php">BTF Calculator</a></li></br>
+									<li><a href="service.php">Cash advance Calculator</a></li></br>
+								</ul>	
+							</div>						
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Foreign Exchange</h4>
+								<ul>
+									<li><a href="underConstruction.php">SPOT</a></li></br>
+									<li><a href="underConstruction.php">SWAP</a></li></br>
+									<li><a href="underConstruction.php">Forward</a></li></br>
+								</ul>	
+							</div>												
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Check eligibility</h4>
+								<ul>
+									<li><a href="underConstruction.php">Accounts</a></li></br>
+									<li><a href="underConstruction.php">Cards</a></li></br>
+									<li><a href="underConstruction.php">Deposit</a></li></br>
+									<li><a href="underConstruction.php">Loans</a></li></br>
+									<li><a href="underConstruction.php">Investments</a></li></br>
+								</ul>	
+							</div>						
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Help us, Help you!</h4>
+								<ul>
+									<li><a href="videos.php">Demo Videos</a></li></br>
+									<li><a href="underConstruction.php">FAQs</a></li></br>
+									<li><a href="underConstruction.php">Our Security</a></li></br>
+								</ul>	
+							</div>						
+						</div>
+					</div>
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+    				</div>
+				</li>
+				<li><a class="color7" href="contact.php">Contact</a>
+					<div class="megapanel">
+						<div class="row">
+							<div class="col3">
+								<div class="h_nav">
+									<h4>Contact Us</h4>
+								</div>
+								<form class="contact" action = "requestReceived.php">
+									<label for="name">Name</label>
+									<input id="name" type="text"/>
+									<label for="email">E-mail</label>
+									<input id="email" type="text"/>
+									<label for="message">Message</label>
+									<textarea rows="8" id="message"></textarea>
+									<input type="submit" value="Send"/>
+								</form>
+							</div>
+							<div class="col3">
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a class="color7" href = "#">Welcome 
+					<?php echo $_SESSION['login_user']
+						?>!</a>
+					<div class="dropdown">						
+						<ul> 
+							<li><a href="underConstruction.php">Inbox</a></li>
+							<li><a href="sprofile.php">Profile</a></li>
+							<li><a href="ServiceRequest.php">Service Request</a></li>
+							<li><a href="../logout.php">Logout</a></li>
+						</ul>
+					</div>
+			</li>
+		 </ul>
+	</div>
 </div>
 <div class="main_bg"><!-- start main -->
 <div class="container">

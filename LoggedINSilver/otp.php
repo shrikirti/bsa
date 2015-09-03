@@ -10,6 +10,7 @@ session_start();
       if($_SESSION['logged_in']!="true"){
 		header("Location: ../LoggedOut.html");
 	}		
+
 ?>
 
 <html>
@@ -31,6 +32,10 @@ session_start();
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- start menu -->
+<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/megamenu.js"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
 <!-- Owl Carousel Assets -->
 <link href="css/owl.carousel.css" rel="stylesheet">
 <script src="js/owl.carousel.js"></script>
@@ -419,8 +424,6 @@ $(document).ready(function() {
 				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 				<li><a class="color7" href="service.php">Sign up</a></li>
 				<li><a class="color7" href = "#">					
 							<img class ="lock" src="images/icon-lock.png" height = "20" width ="20" alt=""/>
@@ -478,7 +481,7 @@ $(document).ready(function() {
 		<p class="para">
 		An OTP for your service request verification has been sent to your registered mobile number: 
 		<?php
-			$displaynum = substr($_SESSION['mobile'], 6,2)."****".substr($_SESSION['mobile'], 6);
+			$displaynum = substr($_SESSION['mobile'],0,2)."****".substr($_SESSION['mobile'], 6);
 			echo $displaynum;
 		?>. Please enter it below to confirm your request.
 		<form method="post" action="../AdminAccessOnly/GoldUserRegistration.php">

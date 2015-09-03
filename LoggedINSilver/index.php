@@ -223,33 +223,34 @@ $(document).ready(function() {
 			<a href="index.php"><img src="images/logo.png" alt=""/></a>
 		</div>
 		<div class="h_menu">
-		<a id="touch-menu" class="mobile-menu" href="#">Help and Support</a>
-		<nav>
-		<ul class="menu list-unstyled">
-			<li><a href="#">Language: <select class = "search">
-					<option>EN</option>
-					<option>Arabic</option>
-				</select>
-				</a></li>
-			<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-			<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-			<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-			<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-			<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-			<li><a href="underConstruction.php">24X7 Help</a></li>
-			<li><a href="underConstruction.php">Find ATMs</a></li>
-			<li><a href="underConstruction.php">Sitemap</a></li>
-			<li><a href="#">
-				<form >
+			<a id="touch-menu" class="mobile-menu" href="#">Help and Support</a>
+			<nav>
+			<ul class="menu list-unstyled">
+				<li><a href="#">Language: 
+						<select class = "search">
+							<option>EN</option>
+							<option>Arabic</option>
+						</select>
+					</a>
+				</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a href="underConstruction.php">24X7 Help</a></li>
+				<li><a href="underConstruction.php">Find ATMs</a></li>
+				<li><a href="underConstruction.php">Sitemap</a></li>
+				<li><a href="#">
+					<form >
 						<input type="text" value="" placeholder="search...">
 						<span><i class="fa fa-search"></i></span>
-				</form>
-				</a>
-			</li>
-
-		</ul>
-		</nav>
-		<script src="js/menu.js" type="text/javascript"></script>
+					</form>
+					</a>
+				</li>
+			</ul>
+			</nav>
+			<script src="js/menu.js" type="text/javascript"></script>
 		</div>
 
 		<div class="clearfix"></div>
@@ -454,8 +455,6 @@ $(document).ready(function() {
 				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>				
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</li>
 				<li><a class="color7" href = "#">Welcome 
 					<?php echo $_SESSION['login_user']
 						?>!</a>
@@ -469,7 +468,7 @@ $(document).ready(function() {
 					</div>
 			</li>
 		 </ul>
-</div>
+	</div>
 </div>
 
 <div class="main_bg"><!-- start main -->

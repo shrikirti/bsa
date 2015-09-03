@@ -34,6 +34,10 @@ session_start();
     <script src="js/css3-mediaqueries.js"></script>
     <script src="js/fwslider.js"></script>
 <!--end slider -->
+<!-- start menu -->
+<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/megamenu.js"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
 <!-- must have -->
 <link href="css/allinone_carousel.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
@@ -232,33 +236,34 @@ $(document).ready(function() {
 			<a href="index.php"><img src="images/logo.png" alt=""/></a>
 		</div>
 		<div class="h_menu">
-		<a id="touch-menu" class="mobile-menu" href="#">Help and Support</a>
-		<nav>
-		<ul class="menu list-unstyled">
-			<li><a href="#">Language: <select class = "search">
-					<option>EN</option>
-					<option>Arabic</option>
-				</select>
-				</a></li>
-			<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-			<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-			<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-			<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-			<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-			<li><a href="underConstruction.php">24X7 Help</a></li>
-			<li><a href="underConstruction.php">Find ATMs</a></li>
-			<li><a href="underConstruction.php">Sitemap</a></li>
-			<li><a href="#">
-				<form >
+			<a id="touch-menu" class="mobile-menu" href="#">Help and Support</a>
+			<nav>
+			<ul class="menu list-unstyled">
+				<li><a href="#">Language: 
+						<select class = "search">
+							<option>EN</option>
+							<option>Arabic</option>
+						</select>
+					</a>
+				</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li> </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a href="underConstruction.php">24X7 Help</a></li>
+				<li><a href="underConstruction.php">Find ATMs</a></li>
+				<li><a href="underConstruction.php">Sitemap</a></li>
+				<li><a href="#">
+					<form >
 						<input type="text" value="" placeholder="search...">
 						<span><i class="fa fa-search"></i></span>
-				</form>
-				</a>
-			</li>
-
-		</ul>
-		</nav>
-		<script src="js/menu.js" type="text/javascript"></script>
+					</form>
+					</a>
+				</li>
+			</ul>
+			</nav>
+			<script src="js/menu.js" type="text/javascript"></script>
 		</div>
 
 		<div class="clearfix"></div>
@@ -307,7 +312,7 @@ $(document).ready(function() {
 								<h4>Treasury</h4>
 								<ul>
 									<li><a href="underConstruction.php">Term Deposit</a></li></br>
-									<li><a href="wounderConstructionmen.php">Recurring Deposit</a></li></br>
+									<li><a href="underConstruction.php">Recurring Deposit</a></li></br>
 								</ul>	
 							</div>							
 						</div>
@@ -463,20 +468,20 @@ $(document).ready(function() {
 				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>				
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li><a class="color7" href = "#">Welcome XYZ!</a>
+				<li><a class="color7" href = "#">Welcome 
+					<?php echo $_SESSION['login_user']
+						?>!</a>
 					<div class="dropdown">						
 						<ul> 
 							<li><a href="underConstruction.php">Inbox</a></li>
 							<li><a href="sprofile.php">Profile</a></li>
 							<li><a href="ServiceRequest.php">Service Request</a></li>
-							<li><a href="../LoggedOut.html">Logout</a></li>
+							<li><a href="../logout.php">Logout</a></li>
 						</ul>
 					</div>
 			</li>
 		 </ul>
-</div>
+	</div>
 </div>
 
 <div class="main_bg"><!-- start main -->
