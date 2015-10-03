@@ -42,7 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 	        </button>
-	        <a class="navbar-brand" href="index.php"><img src="images/logo.png" alt=""/></a>
+	        <a class="navbar-brand" href="summary.php"><img src="images/logo.png" alt=""/></a>
 	    </div>
 	    <!--/.navbar-header-->
 	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
@@ -124,11 +124,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<div id="search_wrapper1">
 		   <div id="search_form" class="clearfix">
-		    <h1>Search people</h1>
+		    <h1>Compare BSA with other Banks</h1>
 		    <p>
-			 <input type="text" class="text" placeholder=" " value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
-			 <input type="text" class="text" placeholder=" " value="Location" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Location';}">
-			 <label class="btn2 btn-2 btn2-1b"><input type="submit" value="Search"></label>
+			<form action = "banks.php">
+			 <label class="btn2 btn-2 btn2-1b"><input type="submit" value="View other Banks and their Services"></label>
+			</form>
 			</p>
            </div>
 		</div>

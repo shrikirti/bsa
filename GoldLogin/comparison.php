@@ -12,10 +12,9 @@ session_start();
 		header("Location: ../LoggedOut.html");
 	}		
 ?>
-
 <html>
 <head>
-<title>Seeking an Job Portal Category Flat Bootstarp Resposive Website Template | Codes :: w3layouts</title>
+<title>Seeking an Job Portal Category Flat Bootstarp Resposive Website Template | Service :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Seeking Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -51,7 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Overview<b class="caret"></b></a>
 		            <ul class="dropdown-menu">
 			            <li><a href="summary.php">Summary</a></li>
-			            <li><a href="calcy.php">My shortcuts</a></li>
+			            <li><a href="calcy.php">My Profile</a></li>
 		            </ul>
 		        </li>
 		        <li class="dropdown">
@@ -121,108 +120,108 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	    <!--/.navbar-collapse-->
 	</nav>
 
+	
 <div class="container">
-<div class="short_codes">
-<!--
- <article class="headings">
-    <h1>H1 Style Font Size 36px</h1>
-	<p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem</p>
-	<p>&nbsp;</p>
-	<h2>H2 Style Font Size 30px</h2>
-	<p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem</p>
-	<p>&nbsp;</p>
-	<h3>H3 Style Font Size 28px</h3>
-	<p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem</p>
-	<p>&nbsp;</p>
-	<h4>H4 Style Font Size 24px</h4>
-	<p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem</p>
-	<p>&nbsp;</p>
-	<h5>H5 Style Font Size 20px</h5>
-	<p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem</p>
-	<p>&nbsp;</p>
-	<h6>H6 Style Font Size 16px</h6>
-	<p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem</p>
- </article>
- -->
- <div class="list_1">
-     <!--
-	 <div class="progress-content">
-		<h3>Default</h3>
-			<div class="progress default"><div class="progress-bar progress-bar-default" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="progress-label">Default</span>60%</div></div>
-			<div class="progress default"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><span class="progress-label">Success</span>40%</div></div>
-			<div class="progress default"><div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"><span class="progress-label">Info</span>20%</div></div>
-			<div class="progress default"><div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="progress-label">Warning</span>60%</div></div>
-			<div class="progress default"><div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="progress-label">Danger</span>80%</div></div>
-			<div class="spacer spacer-normal "></div>
-			<h3>Striped</h3>
-			<div class="progress progress-striped"><div class="progress-bar progress-bar-default" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="progress-label">Default</span>60%</div></div>
-			<div class="progress progress-striped"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><span class="progress-label">Success</span>40%</div></div>
-			<div class="progress progress-striped"><div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"><span class="progress-label">Info</span>20%</div></div>
-			<div class="progress progress-striped"><div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="progress-label">Warning</span>60%</div></div>
-			<div class="progress progress-striped"><div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="progress-label">Danger</span>80%</div></div>
-			<div class="spacer spacer-normal "></div>
-			<h3>Animated</h3>
-			<div class="progress progress-striped active"><div class="progress-bar progress-bar-default" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="progress-label">Default</span>60%</div></div>
-			<div class="progress progress-striped active"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><span class="progress-label">Success</span>40%</div></div>
-			<div class="progress progress-striped active"><div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"><span class="progress-label">Info</span>20%</div></div>
-			<div class="progress progress-striped active"><div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="progress-label">Warning</span>60%</div></div>
-			<div class="progress progress-striped active"><div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="progress-label"></span>80%</div></div>
-	   </div>
-	   -->
-
-
-		<div class="columns">
-			<h1>Summary</h1>
-			<div class="row">
-			<div class="col-sm-6 column_grid">
-			<h3> Your Assets </h3>
-			<p>
-			
-			<table>
-			<tr>
-				<td width='50%'> Balance in Account: </td>
-				<td align = 'right'> 50,000 Riyal </td>
-			</tr>
-			<tr>
-				<td width='50%'>Deposits: </td>	
-				<td align = 'right'>180,000 Riyal </td>
-			</tr>
-			<tr> <td>&nbsp;</td> </tr>
-			<tr>
-				<td width='80%'> Total: </td>
-				<td align = 'right'>230,000 Riyal</td>
-			</tr>
-			</table>
-			
-			</p>
+    <div class="single">  
+       <div class="box_1">
+       	<h3>This Bank Calculators</h3>
+        <div class="col-md-5">
+        	<img src="images/1.png" class="img-responsive" alt=""/>
+        </div>
+        <div class="col-md-7 service_box1">
+        	<h5>Calculators not much used</h5>
+        	<p>Easy to use but don't cover services in details. </p>
+        	
+        </div>
+        <div class="clearfix"> </div>
+       </div>
+       <div class="box_2">
+       	<h3>BSA Calculators Services</h3>
+       	<div class="col-md-4 icon-service">
+       		<div class="icon">
+				<i class="fa fa-calendar"></i>
 			</div>
-			<div class="col-sm-6 column_grid">
-			<h3> Your Liabilities </h3>
-			<p>
-			<table>
-			<tr>
-				<td width='80%'> Credit Card Amount Due: </td>
-				
-				<td align = 'right'> 20,000 Riyal </td>
-			</tr>
-			<tr> <td>&nbsp;</td> </tr>
-			<tr> <td>&nbsp; </td></tr>
-			<tr>
-				<td width='50%'> Total: </td>
-				<td align = 'right'>20,000 Riyal</td>
-			</tr>
-			</table>
-			</p>
+			<div class="icon-box-body">
+				<h4>Loans</h4>
+				<p></p>
 			</div>
-			</div>
-
-
-
 		</div>
-		
-
-    </div>
-   </div>
+       	<div class="col-md-4 icon-service">
+       		<div class="icon">
+				<i class="fa fa-lightbulb-o"></i>
+			</div>
+			<div class="icon-box-body">
+				<h4>Savings</h4>
+				<p></p>
+			</div>
+		</div>
+       	<div class="col-md-4 icon-service">
+       		<div class="icon">
+				<i class="fa fa-briefcase"></i>
+			</div>
+			<div class="icon-box-body">
+				<h4>Mortgage</h4>
+				<p></p>
+			</div>
+		</div>
+		<div class="col-md-4 icon-service">
+       		<div class="icon">
+				<i class="fa fa-bar-chart-o"></i>
+			</div>
+			<div class="icon-box-body">
+				<h4>Projections</h4>
+				<p></p>
+			</div>
+		</div>
+		<div class="col-md-4 icon-service">
+       		<div class="icon">
+				<i class="fa fa-bug"></i>
+			</div>
+			<div class="icon-box-body">
+				<h4>Currency Converter</h4>
+				<p></p>
+			</div>
+		</div>
+		<div class="col-md-4 icon-service">
+       		<div class="icon">
+				<i class="fa fa-flash"></i>
+			</div>
+			<div class="icon-box-body">
+				<h4>Deposit</h4>
+				<p></p>
+			</div>
+		</div>
+       	<div class="clearfix"> </div>
+       </div>
+       <div class="box_3">
+       	  <h3>Customers Speak</h3>
+       	  <div class="col-md-6 testimonial">
+		    <blockquote>
+				<p>At par</p>
+			</blockquote>
+			<div class="author">
+				<figure class="author-img">
+					<img src="images/f2.jpg" class="img-responsive" alt=""/>
+				</figure>
+				<h6>BSA</h6>
+				<span class="author-info">Rating: Excellent</span>
+			</div>
+		  </div>
+		  <div class="col-md-6 testimonial">
+		    <blockquote>
+				<p>Lack in many calculators</p>
+			</blockquote>
+			<div class="author">
+				<figure class="author-img">
+					<img src="images/f1.jpg" class="img-responsive" alt=""/>
+				</figure>
+				<h6>This Bank</h6>
+				<span class="author-info">Rating: Average</span>
+			</div>
+		 </div>
+		 <div class="clearfix"> </div>
+       </div>
+	</div>
 </div>
 <div class="footer">
 	<div class="container">
@@ -269,11 +268,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <div class="footer_bottom">	
   <div class="container">
-
 	<div class="copy">
 		<p>Copyright © 2015 Seeking . All Rights Reserved . Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
 	</div>
   </div>
 </div>
+
 </body>
-</html>
+</html>	

@@ -4,7 +4,7 @@ session_start();
       if($_SESSION['logged_in']!="true"){
 		header("Location: ../LoggedOut.html");
 	}		
-	/**
+	
 	// create a new cURL resource
 	$ch = curl_init();
 
@@ -19,7 +19,7 @@ session_start();
 
 	// close cURL resource, and free up system resources
 	curl_close($ch);
-	**/
+	
 	echo "<script>window.open ('otp.php', '_self'); </script>";
 	
 	
