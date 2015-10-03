@@ -162,6 +162,20 @@ $(document).ready(function() {
     
 });
 </script>
+<!--- otp validation script --->
+<script type="text/javascript">
+
+		function validate(otp)
+		{
+			if(otp.length != 6){
+				alert( "Invalid OTP! ");	 
+				return false;
+			}else{
+				//alert( "Congratulations, You have updated your profile successfully!" );
+				return true;	 
+			}
+		}
+</script>
 
 <!-- start menu -->
 <link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
@@ -424,40 +438,16 @@ $(document).ready(function() {
 				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li><a class="color7" href="service.php">Sign up</a></li>
-				<li><a class="color7" href = "#">					
-							<img class ="lock" src="images/icon-lock.png" height = "20" width ="20" alt=""/>
-						&nbsp;Login
-					</a>
-					<div class="megapanel">
-						<div class="row">
-
-							<div class="col3">
-								<div class="h_nav">
-									<h4>Login</h4>
-								</div>
-								<form  name = "loginForm" class="contact" onSubmit =" return login(this.loginType.value);">
-									</br>
-									<input name = "loginType" id="type" type="radio" value = "plogin"/>
-									<label for="personal">Personal</label></br>
-									<input name = "loginType" id="type" type="radio" value = "clogin"/>									
-									<label for="corporate">Corporate</label></br>
-									<input type="submit" value="Login"/>
-								</form>
-							</div>
-							<div class="col2">
-								<div class="h_nav">
-									<h4>New User?</h4>
-									<ul>
-										</br>Join us today for access to our financial tools, on-line chat, communities, forum and many more exciting facilities!
-										</br>
-										<form class="contact" action = "service.php" onSubmit = " return true">
-											<input type="submit" value="Register"/>
-										</form>
-									</ul>
-								</div>
-							</div>
-						</div>
+				<li><a class="color7" href = "#">Welcome 
+					<?php echo $_SESSION['login_user']
+						?>!</a>
+					<div class="dropdown">						
+						<ul> 
+							<li><a href="underConstruction.php">Inbox</a></li>
+							<li><a href="sprofile.php">Profile</a></li>
+							<li><a href="ServiceRequest.php">Service Request</a></li>
+							<li><a href="../logout.php">Logout</a></li>
+						</ul>
 					</div>
 			</li>
 		 </ul>
@@ -484,7 +474,7 @@ $(document).ready(function() {
 			$displaynum = substr($_SESSION['mobile'],0,2)."****".substr($_SESSION['mobile'], 6);
 			echo $displaynum;
 		?>. Please enter it below to confirm your request.
-		<form method="post" action="../AdminAccessOnly/GoldUserRegistration.php">
+		<form method="post" action="../AdminAccessOnly/GoldUserRegistration.php", onSubmit="return validate(this.otp.value)">
 		<table>
 			<tr>
 				<td width = '100%' align = 'center'> <input type="text"   name = "otp" placeholder="OTP" required/></td>

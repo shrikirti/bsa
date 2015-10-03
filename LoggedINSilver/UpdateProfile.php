@@ -438,8 +438,8 @@ $(document).ready(function() {
 								<option value="#">Select..</option>
 								<option value="openAccount.php">Become Gold Member</option>								
 								<option value="addition.php">Add more info in Profile</option>
-								<option value="Enquiry.php">Enquiry</option>
-								<option value="Feedback.php">Feedback or Complaint</option>
+								<option value="underConstruction.php">Enquiry</option>
+								<option value="underConstruction.php">Feedback or Complaint</option>
 							</select>
 							</font>
 						</form>
